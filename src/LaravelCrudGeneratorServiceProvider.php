@@ -1,6 +1,6 @@
 <?php
 
-namespace Yudican\LaravelCrudGenerator;
+namespace LaravelCrudGenerator;
 
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\ServiceProvider;

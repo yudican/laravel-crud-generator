@@ -20,6 +20,9 @@
             "providers": [
                 "Yudican\\LaravelCrudGenerator\\LaravelCrudGeneratorServiceProvider"
             ]
+        },
+        "aliases": {
+            "LaravelCrudGenerator": "Yudican\\LaravelCrudGenerator"
         }
     }
 }

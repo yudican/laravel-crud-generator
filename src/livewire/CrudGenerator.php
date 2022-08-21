@@ -1,6 +1,6 @@
 <?php
 
-namespace Yudican\LaravelCrudGenerator\Http\Livewire;
+namespace LaravelCrudGenerator\Livewire;
 
 use Illuminate\Support\Facades\Schema;
 use Livewire\Component;
