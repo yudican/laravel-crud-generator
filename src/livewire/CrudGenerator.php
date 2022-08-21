@@ -24,6 +24,9 @@ class CrudGenerator extends Component
     public $prefix = 'tbl_';
     public function mount()
     {
+        $cdatabase = env('DB_CONNECTION', 'mysql');
+        $prefix = config('database.connections.' . $cdatabase . '.prefix');
+        $this->prefix = $prefix;
         $table_name = 'Tables_in_' . env('DB_DATABASE', 'forge');
         $exlude_table = [$this->prefix . 'failed_jobs', $this->prefix . 'migrations', $this->prefix . 'password_resets', $this->prefix . 'permission_role', $this->prefix . 'permissions', $this->prefix . 'personal_access_tokens', $this->prefix . 'role_user', $this->prefix . 'roles', $this->prefix . 'sessions', $this->prefix . 'team_user', $this->prefix . 'teams', $this->prefix . 'hideable_columns', $this->prefix . 'menus', $this->prefix . 'menu_role'];
         $columns = Schema::getAllTables();

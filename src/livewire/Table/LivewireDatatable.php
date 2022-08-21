@@ -86,6 +86,10 @@ class LivewireDatatable extends Component
       $this->$property = $this->$property ?? $$property;
     }
 
+    $cdatabase = env('DB_CONNECTION', 'mysql');
+    $prefix = config('database.connections.' . $cdatabase . '.prefix');
+    $this->prefix = $prefix;
+
     $this->params = $params;
 
     $this->columns = $this->getViewColumns();
