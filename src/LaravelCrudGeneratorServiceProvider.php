@@ -5,6 +5,12 @@ namespace Yudican\LaravelCrudGenerator;
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\ServiceProvider;
 use Livewire\Livewire;
+use Yudican\LaravelCrudGenerator\Components\InputFile;
+use Yudican\LaravelCrudGenerator\Components\InputImage;
+use Yudican\LaravelCrudGenerator\Components\Select;
+use Yudican\LaravelCrudGenerator\Components\Textarea;
+use Yudican\LaravelCrudGenerator\Components\TextDate;
+use Yudican\LaravelCrudGenerator\Components\TextField;
 use Yudican\LaravelCrudGenerator\Livewire\CrudGenerator;
 
 class LaravelCrudGeneratorServiceProvider extends ServiceProvider
@@ -23,12 +29,12 @@ class LaravelCrudGeneratorServiceProvider extends ServiceProvider
     $this->loadViewsFrom(__DIR__ . '/resources/components', 'crud-generator-components');
 
     // components
-    Blade::component('crud-generator-components::text-field');
-    Blade::component('crud-generator-components::text-date');
-    Blade::component('crud-generator-components::textarea');
-    Blade::component('crud-generator-components::input-file');
-    Blade::component('crud-generator-components::input-photo');
-    Blade::component('crud-generator-components::select');
+    Blade::component('text-field', TextField::class);
+    Blade::component('text-date', TextDate::class);
+    Blade::component('texarea', Textarea::class);
+    Blade::component('select', Select::class);
+    Blade::component('input-file', InputFile::class);
+    Blade::component('input-image', InputImage::class);
 
     $this->publishes([
       __DIR__ . '/config/crud-generator.php' => config_path('crud-generator.php'),
