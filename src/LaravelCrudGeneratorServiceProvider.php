@@ -14,11 +14,11 @@ class LaravelCrudGeneratorServiceProvider extends ServiceProvider
    */
   public function boot()
   {
-    $this->loadViewsFrom(__DIR__ . '../../resources/views/livewire', 'laravel-crud-generator');
-    $this->loadRoutesFrom(__DIR__ . '../../routes/routes.php');
+    $this->loadViewsFrom(__DIR__ . '/views/livewire/', 'laravel-crud-generator');
+    $this->loadRoutesFrom(__DIR__ . '/routes/routes.php');
 
     $this->publishes([
-      __DIR__ . '../../config/crud-generator.php' => config_path('crud-generator.php'),
+      __DIR__ . '/config/crud-generator.php' => config_path('crud-generator.php'),
     ], 'config');
   }
 }

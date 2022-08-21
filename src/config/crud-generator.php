@@ -5,4 +5,5 @@ return [
     'web',
   ],
   'prefix' => '',
+  'layout' => 'layouts.app',
 ];
