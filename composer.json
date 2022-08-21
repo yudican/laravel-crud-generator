@@ -1,7 +1,8 @@
 {
     "name": "yudican/laravel-crud-generator",
     "description": "Laravel Livewire Crud Generator",
-    "type": "library",
+    "keywords": ["laravel", "livewire", "crud generator"],
+    "license": "MIT",
     "autoload": {
         "psr-4": {
             "Yudicandra\\LaravelCrudGenerator\\": "src/"
