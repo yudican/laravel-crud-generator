@@ -18,7 +18,7 @@ class LaravelCrudGeneratorServiceProvider extends ServiceProvider
     $this->loadRoutesFrom(__DIR__ . '../../routes/routes.php');
 
     $this->publishes([
-      __DIR__ . '../../config/crud-generator-middleware.php' => config_path('crud-generator-middleware.php'),
+      __DIR__ . '../../config/crud-generator.php' => config_path('crud-generator.php'),
     ], 'config');
   }
 }
