@@ -4,7 +4,7 @@ namespace Yudicandra\LaravelCrudGenerator;
 
 use Illuminate\Support\ServiceProvider;
 
-class LcgServiceProvider extends ServiceProvider
+class LaravelCrudGeneratorServiceProvider extends ServiceProvider
 {
   /**
    * Bootstrap the application services.

@@ -14,5 +14,12 @@
     "require": {
         "livewire/livewire": "^2.10",
         "mediconesystems/livewire-datatables": "^0.9.5"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Yudicandra\\LaravelCrudGenerator\\LaravelCrudGeneratorServiceProvider"
+            ]
+        }
     }
 }
