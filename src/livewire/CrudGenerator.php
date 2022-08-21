@@ -62,7 +62,7 @@ class CrudGenerator extends Component
             $this->field = $this->field;
             $this->field_column = array_merge_recursive($this->field['type'], $this->field['label']);
         }
-        return view('laravel-crud-generator::crud-generator')->layout(config('crud-generator.layout'));
+        return view('crud-generator-views::crud-generator')->layout(config('crud-generator.layout'));
     }
 
     protected function getStub($type)
