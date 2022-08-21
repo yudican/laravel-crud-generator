@@ -1,0 +1,17 @@
+{
+    "name": "yudican/laravel-crud-generator",
+    "description": "Laravel Livewire Crud Generator",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Yudicandra\\LaravelCrudGenerator\\": "src/"
+        }
+    },
+    "authors": [{
+        "name": "Yudi Candra"
+    }],
+    "require": {
+        "livewire/livewire": "^2.10",
+        "mediconesystems/livewire-datatables": "^0.9.5"
+    }
+}
