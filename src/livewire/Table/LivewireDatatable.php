@@ -1,6 +1,6 @@
 <?php
 
-namespace LaravelCrudGenerator\Livewire\Table;
+namespace Yudican\LaravelCrudGenerator\Livewire\Table;
 
 use Exception;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
