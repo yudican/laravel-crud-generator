@@ -23,12 +23,12 @@ class LaravelCrudGeneratorServiceProvider extends ServiceProvider
     $this->loadViewsFrom(__DIR__ . '/resources/components', 'crud-generator-components');
 
     // components
-    Blade::component('components::text-field');
-    Blade::component('components::text-date');
-    Blade::component('components::textarea');
-    Blade::component('components::input-file');
-    Blade::component('components::input-photo');
-    Blade::component('components::select');
+    Blade::component('crud-generator-components::text-field');
+    Blade::component('crud-generator-components::text-date');
+    Blade::component('crud-generator-components::textarea');
+    Blade::component('crud-generator-components::input-file');
+    Blade::component('crud-generator-components::input-photo');
+    Blade::component('crud-generator-components::select');
 
     $this->publishes([
       __DIR__ . '/config/crud-generator.php' => config_path('crud-generator.php'),
