@@ -4,6 +4,8 @@ namespace Yudican\LaravelCrudGenerator;
 
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\ServiceProvider;
+use Livewire\Livewire;
+use Yudican\LaravelCrudGenerator\Livewire\CrudGenerator;
 
 class LaravelCrudGeneratorServiceProvider extends ServiceProvider
 {
@@ -14,6 +16,7 @@ class LaravelCrudGeneratorServiceProvider extends ServiceProvider
    */
   public function boot()
   {
+    Livewire::component('crud-generator', CrudGenerator::class);
     $this->loadViewsFrom(__DIR__ . '/views/livewire/', 'laravel-crud-generator');
     $this->loadRoutesFrom(__DIR__ . '/routes/routes.php');
 
