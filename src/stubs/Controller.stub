@@ -30,9 +30,7 @@ class [fileName]Controller extends Component
 
     public function render()
     {
-        return view('livewire.[folderNamespaceLower][viewName]', [
-            'items' => [modelName]::all()
-        ]);
+        return view('livewire.[folderNamespaceLower][viewName]')->layout(config('crud-generator.layout'));
     }
 
     public function store()

@@ -11,7 +11,7 @@ use Yudican\LaravelCrudGenerator\Components\Select;
 use Yudican\LaravelCrudGenerator\Components\Textarea;
 use Yudican\LaravelCrudGenerator\Components\TextDate;
 use Yudican\LaravelCrudGenerator\Components\TextField;
-// use Yudican\LaravelCrudGenerator\Livewire\CrudGenerator;
+use Yudican\LaravelCrudGenerator\Livewire\CrudGenerator;
 use Yudican\LaravelCrudGenerator\Livewire\Table\LivewireDatatable;
 
 class LaravelCrudGeneratorServiceProvider extends ServiceProvider
