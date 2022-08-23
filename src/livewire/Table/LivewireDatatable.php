@@ -67,6 +67,7 @@ class LivewireDatatable extends Component
   public $row = 1;
 
   public $tablePrefix = '';
+  public $loading = true;
 
   public $actions;
   public $massActionOption;
