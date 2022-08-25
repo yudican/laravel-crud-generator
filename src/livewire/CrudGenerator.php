@@ -67,7 +67,7 @@ class CrudGenerator extends Component
 
     protected function getStub($type)
     {
-        return file_get_contents(__DIR__ . "/../stubs/$type.stub");
+        return file_get_contents(__DIR__ . "/../../stubs/$type.stub");
     }
 
     public function generate()

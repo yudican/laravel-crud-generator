@@ -26,11 +26,11 @@ class LaravelCrudGeneratorServiceProvider extends ServiceProvider
     Livewire::component('crud-generator', CrudGenerator::class);
     Livewire::component('datatable', LivewireDatatable::class);
 
-    $this->loadViewsFrom(__DIR__ . '/resources/views/livewire/', 'crud-generator-views');
-    $this->loadViewsFrom(__DIR__ . '/resources/views/livewire/datatables', 'datatable-views');
-    $this->loadViewsFrom(__DIR__ . '/resources/components', 'crud-generator-components');
-    $this->loadViewsFrom(__DIR__ . '/resources/views/livewire/datatables/icons', 'icon-views');
-    $this->loadRoutesFrom(__DIR__ . '/routes/routes.php');
+    $this->loadViewsFrom(__DIR__ . '/../resources/views/livewire/', 'crud-generator-views');
+    $this->loadViewsFrom(__DIR__ . '/../resources/views/livewire/datatables', 'datatable-views');
+    $this->loadViewsFrom(__DIR__ . '/../resources/components', 'crud-generator-components');
+    $this->loadViewsFrom(__DIR__ . '/../resources/views/livewire/datatables/icons', 'icon-views');
+    $this->loadRoutesFrom(__DIR__ . '/../routes/routes.php');
 
 
     // databel
