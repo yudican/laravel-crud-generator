@@ -6,7 +6,15 @@
     "autoload": {
         "psr-4": {
             "Yudican\\LaravelCrudGenerator\\": "src/"
-        }
+        },
+        "exclude-from-classmap": [
+            "vendor/livewire/livewire/src/Controllers/FilePreviewHandler.php",
+            "vendor/livewire/livewire/src/Controllers/FileUploadHandler.php"
+        ],
+        "files": [
+            "overrides/livewire/FilePreviewHandler.php",
+            "overrides/livewire/FileUploadHandler.php"
+        ]
     },
     "authors": [{
         "name": "Yudi Candra"
