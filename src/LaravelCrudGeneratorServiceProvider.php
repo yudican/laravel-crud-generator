@@ -23,6 +23,7 @@ class LaravelCrudGeneratorServiceProvider extends ServiceProvider
    */
   public function boot()
   {
+    // dd('ok');
     Livewire::component('crud-generator', CrudGenerator::class);
     Livewire::component('datatable', LivewireDatatable::class);
 
@@ -55,7 +56,15 @@ class LaravelCrudGeneratorServiceProvider extends ServiceProvider
     Blade::component('input-image', InputImage::class);
 
     $this->publishes([
-      __DIR__ . '/config/crud-generator.php' => config_path('crud-generator.php'),
+      __DIR__ . '/../config/crud-generator.php' => config_path('crud-generator.php'),
     ], 'config');
+  }
+
+  public function register()
+  {
+    $this->mergeConfigFrom(
+      __DIR__ . '/../config/crud-generator.php',
+      'crud-generator'
+    );
   }
 }
