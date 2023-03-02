@@ -38,6 +38,7 @@ class CrudGenerator extends Component
             }
         }
     }
+
     public function render()
     {
         if ($this->table) {
