@@ -50,7 +50,7 @@ class LaravelCrudGeneratorServiceProvider extends ServiceProvider
     // components
     Blade::component('text-field', TextField::class);
     Blade::component('text-date', TextDate::class);
-    Blade::component('texarea', Textarea::class);
+    Blade::component('textarea', Textarea::class);
     Blade::component('select', Select::class);
     Blade::component('input-file', InputFile::class);
     Blade::component('input-image', InputImage::class);

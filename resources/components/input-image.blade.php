@@ -5,7 +5,7 @@
     @endif
     <br>
     <label for="{{$name}}_picker">
-      <img wire:loading wire:target="{{$name}}" src="https://crm-aimigroup.test/assets/img/loader.gif" style="height: 50px;position: absolute;margin-top: 50px;margin-left: 50px;" alt="loader">
+      <img wire:loading wire:target="{{$name}}" src="{{('/assets/img/loader.svg')}}" style="height: 50px;position: absolute;margin-top: 50px;margin-left: 50px;" alt="loader">
       @if ($foto)
       @if ($path)
       <img id="image-preview-{{$name}}" width="150" class=" btn btn-light ratio-img img-fluid p-2 border image rounded border-dashed" style="width: 150px;height:150px;object-fit:contain;" src="{{ $path }}" alt="your image" />
@@ -17,7 +17,7 @@
       @if ($path)
       <img id="image-preview-{{$name}}" width="150" class=" btn btn-light ratio-img img-fluid p-2 border image rounded border-dashed" style="width: 150px;height:150px;object-fit:contain;" src="{{ $path }}" alt="your image" />
       @else
-      <img id="image-preview-{{$name}}" class=" btn btn-light ratio-img img-fluid p-2 border image rounded border-dashed" width="150" style="width: 150px;height:150px;object-fit:contain;" src="{{(__DIR__.'/../../public/img/card.svg')}}" alt="your image" />
+      <img id="image-preview-{{$name}}" class=" btn btn-light ratio-img img-fluid p-2 border image rounded border-dashed" width="150" style="width: 150px;height:150px;object-fit:contain;" src="{{('/assets/img/card.svg')}}" alt="your image" />
       @endif
       @endif
       <br>
